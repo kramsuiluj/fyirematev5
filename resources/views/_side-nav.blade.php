@@ -1,4 +1,5 @@
-<aside id="side-nav" style="transition: 0.5s; overflow-x: hidden" class="font-opensans bg-white fixed w-52 h-screen text-slate-700 border-r border-gray-300">
+<aside id="side-nav" style="transition: 0.5s; overflow-x: hidden" class="font-opensans bg-white fixed w-52 h-screen
+text-slate-700 border-r border-gray-300 left-0 top-0 z-0 mt-16">
     <ul class="mt-1 grid justify-center text-sm">
         <li>
             <a href="{{ route('administrators.dashboard') }}" class="flex items-center space-x-3 px-3 py-3

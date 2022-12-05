@@ -1,4 +1,4 @@
-<header class="bg-white border-t-4 border-gray-300 border-b">
+<header class="bg-white border-t-4 border-gray-300 border-b z-10 fixed w-full top-0 h-16">
     <div class="flex items-center justify-between px-5 py-3">
         <section class="flex items-center space-x-5">
             <div id="toggle" class="p-1 rounded-full hover:bg-gray-100 cursor-pointer">

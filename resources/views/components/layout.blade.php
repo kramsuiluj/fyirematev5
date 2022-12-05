@@ -34,7 +34,7 @@
         const openIcon = document.getElementById('open');
         const closeIcon = document.getElementById('close');
         const sideNav = document.getElementById('side-nav');
-        // const mainContainer = document.getElementById('main-container');
+        const mainContainer = document.getElementById('main-container');
         const subHeader = document.getElementById('sub-header');
         const actions = document.getElementById('actions');
         // const searching = document.getElementById('searching');
@@ -53,14 +53,14 @@
             if (openIcon.style.display === 'none') {
                 openIcon.style.display = 'block';
                 closeIcon.style.display = 'none';
-                // mainContainer.classList.add('ml-52');
+                mainContainer.classList.add('ml-52');
                 subHeader.classList.add('ml-52');
                 sideNav.style.width = '13rem';
                 actions.classList.add('ml-52');
             } else {
                 openIcon.style.display = 'none';
                 closeIcon.style.display = 'block';
-                // mainContainer.classList.remove('ml-52');
+                mainContainer.classList.remove('ml-52');
                 subHeader.classList.remove('ml-52');
                 sideNav.style.width = '0';
                 actions.classList.remove('ml-52');
