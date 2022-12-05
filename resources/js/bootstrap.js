@@ -32,3 +32,15 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     forceTLS: (import.meta.env.VITE_PUSHER_SCHEME ?? 'https') === 'https',
 //     enabledTransports: ['ws', 'wss'],
 // });
+
+import Chart from 'chart.js/auto';
+window.Chart = Chart;
+
+import $ from 'jquery';
+window.$ = $;
+
+import jQuery from 'jquery';
+window.jQuery = jQuery;
+
+await import("./jquery-ui-1.13.2/jquery-ui.min.css");
+await import("jquery-ui/dist/jquery-ui");
