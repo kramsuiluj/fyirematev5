@@ -11,16 +11,16 @@ class LogoutController extends Controller
 {
     public function __invoke(): Redirector|Application|RedirectResponse
     {
-        $user = auth()->user()->is_admin;
+        $user = auth()->user();
 
         auth()->logout();
 
-        if (!$user) {
-            activity('Logout')->log('User has logged out.');
+        if (!$user->is_admin) {
+            activity('Logout')->causedBy($user)->log('User has logged out.');
             return redirect(route('index'));
         }
 
-        activity('Logout')->log('Administrator has logged out.');
+        activity('Logout')->causedBy($user)->log('Administrator has logged out.');
         return redirect(route('index'));
     }
 }

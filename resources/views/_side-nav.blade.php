@@ -36,25 +36,40 @@ text-slate-700 border-r border-gray-300 left-0 top-0 z-0 mt-16">
                 </div>
             </div>
 
-            <ul id="personnel-categories" class="flex flex-col items-center border-b bg-gray-100" style="font-weight:
+            <ul id="personnel-categories" class="flex flex-col items-center border-b mt-1 pb-1 space-y-1"
+                style="font-weight:
             300; display: none;">
                 <li
-                    class="py-1 w-full flex items-center space-x-3 cursor-pointer border-b border-slate-700
+                    class="">
+                    <a href="{{ route('administrators.chiefs.index') }}" class="py-1 w-full flex items-center pl-3
+                    space-x-3
+                    cursor-pointer border
+                    border-slate-400
+                    rounded
                     hover:bg-gray-200">
-                    <svg class="w-4 h-4" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                        <svg class="w-4 h-4" fill="#64748B" stroke="#64748B" viewBox="0 0 24 24"
+                             xmlns="http://www.w3
+                        .org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
 
-                    <span>Chief, FSES</span>
+                        <span>Chief, FSES</span>
+                    </a>
                 </li>
 
-                <li class="py-1 w-full flex items-center space-x-3 cursor-pointer border-b border-slate-700
+                <li class="">
+                    <a href="{{ route('administrators.marshals.index') }}" class="py-1 w-full flex items-center pl-3
+                    space-x-3 cursor-pointer
+                    border rounded
+                    border-slate-400
                 hover:bg-gray-200">
-                    <svg class="w-4 h-4" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                        <svg class="w-4 h-4" fill="#64748B" stroke="#64748B" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
 
-                    <span>Muni/City Marshal</span>
+                        <span>Muni/City Marshal</span>
+                    </a>
                 </li>
 
-                <li class="py-1 w-full flex items-center space-x-3 cursor-pointer hover:bg-gray-200">
-                    <svg class="w-4 h-4" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                <li class="py-1 w-full flex items-center space-x-3 cursor-pointer hover:bg-gray-200 border  pl-3
+                rounded border-slate-400">
+                    <svg class="w-4 h-4" fill="#64748B" stroke="#64748B" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
 
                     <span>Inspectors</span>
                 </li>
@@ -78,14 +93,19 @@ text-slate-700 border-r border-gray-300 left-0 top-0 z-0 mt-16">
             <span>Fixed Fields</span>
         </li>
 
-        <li class="flex items-center space-x-3 px-3 py-3 cursor-pointer border-b hover:rounded hover:bg-gray-200"
+        <li class=""
             style="font-weight: 500">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                 xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round"
-                                                          stroke-width="1.5"
-                                                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+            <a href="{{ route('administrators.locations.create') }}" class="flex items-center space-x-3 px-3 py-3
+            cursor-pointer
+            border-b hover:rounded
+            hover:bg-gray-200">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                     xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round"
+                                                              stroke-width="1.5"
+                                                              d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
 
-            <span>Locations</span>
+                <span>Locations</span>
+            </a>
         </li>
 
         <li class="flex items-center space-x-3 px-3 py-3 cursor-pointer border-b hover:rounded hover:bg-gray-200"

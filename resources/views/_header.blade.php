@@ -22,7 +22,14 @@
             <div id="option-items" class="absolute text-sm bg-white border right-0 mr-1.5 mt-1 rounded shadow" style="display: none">
                 <ul class="w-28 text-right">
                     <li class="pt-2 pb-1 px-4 hover:bg-gray-100 cursor-pointer border-b border-gray-200">Profile</li>
-                    <li class="pt-1 pb-2 px-4 hover:bg-gray-100 cursor-pointer">Log Out</li>
+                    <li id="logout" class="pt-1 pb-2 px-4 hover:bg-gray-100 cursor-pointer">
+                        <span>Log out</span>
+
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                        </form>
+                    </li>
                 </ul>
             </div>
         </section>

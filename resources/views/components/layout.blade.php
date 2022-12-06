@@ -19,7 +19,7 @@
 
         body {
             background-color: #f3f4f6;
-            background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%236b7280' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h16v2h-6v6h6v8H8v-6H2v6H0V0zm4 4h2v2H4V4zm8 8h2v2h-2v-2zm-8 0h2v2H4v-2zm8-8h2v2h-2V4z' fill='%23d1d5db' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
         }
     </style>
 </head>
@@ -36,7 +36,7 @@
         const sideNav = document.getElementById('side-nav');
         const mainContainer = document.getElementById('main-container');
         const subHeader = document.getElementById('sub-header');
-        const actions = document.getElementById('actions');
+        // const actions = document.getElementById('actions');
         // const searching = document.getElementById('searching');
         // const searchItems = document.getElementById('search-items');
         // const searches = document.getElementById('searches');
@@ -48,6 +48,12 @@
         const personnelCategories = document.getElementById('personnel-categories');
         const reports = document.getElementById('reports');
         const reportCategories = document.getElementById('report-categories');
+        const logout = document.getElementById('logout');
+        const logoutForm = document.getElementById('logout-form');
+
+        logout.addEventListener('click', () => {
+            logoutForm.submit();
+        });
 
         toggle.addEventListener('click', () => {
             if (openIcon.style.display === 'none') {
@@ -55,15 +61,17 @@
                 closeIcon.style.display = 'none';
                 mainContainer.classList.add('ml-52');
                 subHeader.classList.add('ml-52');
+                subHeader.classList.add('pr-56');
                 sideNav.style.width = '13rem';
-                actions.classList.add('ml-52');
+                // actions.classList.add('ml-52');
             } else {
                 openIcon.style.display = 'none';
                 closeIcon.style.display = 'block';
                 mainContainer.classList.remove('ml-52');
                 subHeader.classList.remove('ml-52');
+                subHeader.classList.remove('pr-56')
                 sideNav.style.width = '0';
-                actions.classList.remove('ml-52');
+                // actions.classList.remove('ml-52');
             }
         });
 
@@ -120,6 +128,8 @@
                reportCategories.style.display = 'block';
            }
         });
+
+        console.log(window.location.href);
     </script>
 </body>
 </html>
