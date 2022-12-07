@@ -39,6 +39,18 @@ text-slate-700 border-r border-gray-300 left-0 top-0 z-0 mt-16">
             <ul id="personnel-categories" class="flex flex-col items-center border-b mt-1 pb-1 space-y-1"
                 style="font-weight:
             300; display: none;">
+                <li class="">
+                    <a href="{{ route('administrators.marshals.index') }}" class="py-1 w-full flex items-center pl-3
+                    space-x-3 cursor-pointer
+                    border rounded
+                    border-slate-400
+                hover:bg-gray-200">
+                        <svg class="w-4 h-4" fill="#64748B" stroke="#64748B" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+
+                        <span>City Fire Marshal</span>
+                    </a>
+                </li>
+
                 <li
                     class="">
                     <a href="{{ route('administrators.chiefs.index') }}" class="py-1 w-full flex items-center pl-3
@@ -52,18 +64,6 @@ text-slate-700 border-r border-gray-300 left-0 top-0 z-0 mt-16">
                         .org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
 
                         <span>Chief, FSES</span>
-                    </a>
-                </li>
-
-                <li class="">
-                    <a href="{{ route('administrators.marshals.index') }}" class="py-1 w-full flex items-center pl-3
-                    space-x-3 cursor-pointer
-                    border rounded
-                    border-slate-400
-                hover:bg-gray-200">
-                        <svg class="w-4 h-4" fill="#64748B" stroke="#64748B" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
-
-                        <span>Muni/City Marshal</span>
                     </a>
                 </li>
 
@@ -129,24 +129,34 @@ text-slate-700 border-r border-gray-300 left-0 top-0 z-0 mt-16">
                 </div>
             </div>
 
-            <ul id="report-categories" class="flex flex-col items-center border-b bg-gray-100" style="font-weight:
+            <ul id="report-categories" class="flex flex-col items-center border-b mt-1 pb-1 space-y-1" style="font-weight:
             300; display: none;">
                 <li
-                    class="py-1 w-full flex items-center space-x-3 px-1 cursor-pointer border-b border-slate-700
-                    hover:bg-gray-200">
+                    class="py-1 w-full flex items-center pl-3
+                    space-x-3 cursor-pointer
+                    border rounded
+                    border-slate-400
+                hover:bg-gray-200">
                     <svg class="w-4 h-4" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
 
                     <span>Monthly Report</span>
                 </li>
 
-                <li class="py-1 w-full flex items-center space-x-3 px-1 cursor-pointer border-b border-slate-700
+                <li class="py-1 w-full flex items-center pl-3
+                    space-x-3 cursor-pointer
+                    border rounded
+                    border-slate-400
                 hover:bg-gray-200">
                     <svg class="w-4 h-4" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
 
                     <span>Quarterly Report</span>
                 </li>
 
-                <li class="py-1 w-full flex items-center space-x-3 px-1 cursor-pointer hover:bg-gray-200">
+                <li class="py-1 w-full flex items-center pl-3
+                    space-x-3 cursor-pointer
+                    border rounded
+                    border-slate-400
+                hover:bg-gray-200">
                     <svg class="w-4 h-4" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
 
                     <span>Annual Report</span>

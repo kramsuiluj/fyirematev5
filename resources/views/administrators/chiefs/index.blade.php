@@ -4,7 +4,7 @@
 
     <x-sub-header>
         <div class="flex items-center justify-between">
-            <h2 class="font-daysone">CHIEFS</h2>
+            <h2 class="font-daysone">CHIEF, FSES</h2>
 
             <div>
                 <a href="{{ route('administrators.chiefs.create') }}" class="font-opensans flex items-center border-2
@@ -23,6 +23,6 @@
     </x-sub-header>
 
     <x-containers.main>
-
+        <h1>tEst</h1>
     </x-containers.main>
 </x-layout>
